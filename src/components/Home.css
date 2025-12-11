@@ -1,0 +1,79 @@
+/* Background */
+.home-background {
+    min-height: 100vh; /* the height of the entire visible screen */
+    background-size: cover; /* makes the background have no gaps or strecht weirdly */
+    background-position: center; /* positions the image at the center */
+    background-repeat: no-repeat; /* if the image was smaller than the screen, repeating it would show multiple copies */
+
+    display: flex; /* positions content on top of background */
+    justify-content: center; /* horizontaly centers the content */ 
+    align-items: center; /* verticaly centers the content */ 
+    padding: 40px 20px; /* prevents text from touching edge of screen on smaller screens */
+}
+
+/* background box for text*/
+.home-content {
+    background: rgba(255, 255, 255, 0.35); /* semi transparent colour */
+    backdrop-filter: blur(10px); /* blurs anything behind the box */
+    border-radius: 20px; /* rounds corners */
+    padding: 40px 30px; /* space between the edge of box and text */
+    max-width: 700px; /* prevents the box from being too big */
+    width: 100%; /* makes box widen on smaller screens */
+    text-align: center; /* centers text in box */
+    animation: fadeIn 1.2s ease-in-out forwards; /* forwards makes the box stay in the final state */
+    border: 1px solid rgba(255, 255, 255, 0.4); /* border colour */
+}
+
+
+.title {
+    font-size: 3rem; /*3rem = 48px*/
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.6rem; /* 1rem = 16px */
+    font-weight: 400; /* bolding the font */
+    margin-bottom: 30px;
+}
+
+/* image styling */ 
+.me-img {
+    width: 260px; 
+    height: 260px; 
+    object-fit: cover; 
+    border-radius: 50%;
+    border: 2px solid #5a26cb;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    margin-bottom: 30px;
+
+    animation: float 3s ease-in-out forwards;
+}
+
+/* contact formating */
+.contact {
+    margin-top: 40px;
+    font-size: 1rem;
+}
+
+.contact a {
+    color: #5a26cb;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact a:hover {
+    text-decoration: underline;
+  }
+
+  /* animations */ 
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); };
+    to { opacity: 1; transform: translateY(0); };
+  }
+
+  @keyframes float {
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+  }

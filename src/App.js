@@ -1,6 +1,6 @@
 import React from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import NavigationBar from "./components/NavigationBar";
+import BottomNavBar from "./components/BottomNavBar";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import './App.css';
@@ -8,7 +8,7 @@ import './App.css';
 const App = () => {
   return (
    <Router>
-     <NavigationBar />
+     <BottomNavBar />
      <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<h1>About Page</h1>} />
