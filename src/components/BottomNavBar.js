@@ -1,5 +1,5 @@
 import "./BottomNavBar.css";
-import {FaHome, FaUser, FaTools, FaFolderOpen, FaEnvelope } from "react-icons/fa";
+import { SlHome, SlUser, SlWrench, SlFolder, SlEnvolope} from "react-icons/sl";
 
 const BottomNavBar = () => { /* function */
     const scrollToSection = (id) => { /* to keep function private */
@@ -12,27 +12,27 @@ const BottomNavBar = () => { /* function */
     return (
         <nav className="bottom-nav">
             <button onClick={() => scrollToSection("home")}> {/*when the user presses this button go to this section */}
-                <FaHome/> {/* renders a home icon */}
+                <SlHome/> {/* renders a home icon */}
                 <span>Home</span> {/* text label for button */}
             </button>
 
             <button onClick={() => scrollToSection("about")}>
-                <FaUser/>
+                <SlUser/>
                 <span>about</span>
             </button>
 
             <button onClick={() => scrollToSection("experience")}>
-                <FaTools/>
+                <SlWrench/>
                 <span>Experience</span>
             </button>
 
             <button onClick={() => scrollToSection("projects")}>
-                <FaFolderOpen/>
+                <SlFolder/>
                 <span>Projects</span>
             </button>
 
             <button onClick={() => scrollToSection("contact")}>
-                <FaEnvelope/>
+                <SlEnvolope/>
                 <span>Contact</span>
             </button>
         </nav>
