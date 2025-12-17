@@ -1,3 +1,15 @@
+.experince-background {
+    min-height: 100vh; /* the height of the entire visible screen */
+    background-size: cover; /* makes the background have no gaps or strecht weirdly */
+    background-position: center; /* positions the image at the center */
+    background-repeat: no-repeat; /* if the image was smaller than the screen, repeating it would show multiple copies */
+
+    display: flex; /* positions content on top of background */
+    justify-content: center; /* horizontaly centers the content */ 
+    align-items: center; /* verticaly centers the content */ 
+    padding: 40px 20px; /* prevents text from touching edge of screen on smaller screens */
+}
+
 .experience {
     padding: 60px 20px;
     display: flex;

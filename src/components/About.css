@@ -1,47 +1,88 @@
+.about-background {
+  min-height: 100vh; /* the height of the entire visible screen */
+  background-size: cover; /* makes the background have no gaps or strecht weirdly */
+  background-position: center; /* positions the image at the center */
+  background-repeat: no-repeat; /* if the image was smaller than the screen, repeating it would show multiple copies */
+
+  display: flex; /* positions content on top of background */
+  justify-content: center; /* horizontaly centers the content */ 
+  align-items: center; /* verticaly centers the content */ 
+  padding: 40px 20px; /* prevents text from touching edge of screen on smaller screens */
+}
+
 .about {
-    padding: 100px 0;
+    padding: 50px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
+
+.about-me {
+  margin-bottom: 50px;
+}
+
+.about-me h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 3rem;
+}
   
-  .about-swipe-container {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    max-width: 900px;
-  }
+.about-swipe-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  height: 350px;
   
-  .about-img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 20px;
-  }
+}
+
+.about-img {
+  width: 330px;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+}
+
+.about-text {
+  width: 350px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.about-text p {
+    font-size: 18px;
+    color: #444;
+}
   
-  .about-text h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-  }
-  
-  .about-text p {
-    font-size: 1.2rem;
-    max-width: 400px;
-  }
-  
-  .about-buttons {
-    margin-top: 20px;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .about-buttons button {
-    font-size: 2rem;
-    padding: 10px 20px;
-    border: none;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 12px;
-    cursor: pointer;
-    backdrop-filter: blur(8px);
-  }
+.about-buttons {
+  position: absolute;
+  top: 50%;           /* vertically centers the arrows */
+  left: -100px;
+  right: -100px;
+
+  display: flex;
+  justify-content: space-between; /* arrows on opposite sides */
+  transform: translateY(-50%); /* perfect vertical centering */
+}
+
+.about-buttons button {
+  font-size: 2rem;
+  padding: 10px 20px;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+}
   

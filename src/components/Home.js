@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import me from "./images/me.JPG";
-import bg from "./images/background.jpg";
+import bg from "./images/background1.jpg";
 import About from "./About";  
 import Expereince from "./Experience";
 
@@ -9,6 +9,7 @@ const Home = () => {
     return (
         <> {/* lets us return multiple elements */}
             <div 
+                id="home"
                 className="home-background"
                 style={{ backgroundImage: `url(${bg})` }}
             >

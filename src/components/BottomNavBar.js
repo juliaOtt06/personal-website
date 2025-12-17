@@ -18,7 +18,7 @@ const BottomNavBar = () => { /* function */
 
             <button onClick={() => scrollToSection("about")}>
                 <SlUser/>
-                <span>about</span>
+                <span>About</span>
             </button>
 
             <button onClick={() => scrollToSection("experience")}>
