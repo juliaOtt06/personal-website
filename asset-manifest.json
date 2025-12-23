@@ -1,22 +1,26 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.6a1a74c4.css",
-    "main.js": "/personal-website/static/js/main.ff022eb3.js",
+    "main.css": "/personal-website/static/css/main.0553ba60.css",
+    "main.js": "/personal-website/static/js/main.fe40875f.js",
     "static/js/453.267e6399.chunk.js": "/personal-website/static/js/453.267e6399.chunk.js",
     "static/media/img1.jpg": "/personal-website/static/media/img1.d2304c164bc6ab9cdc23.jpg",
     "static/media/img2.jpg": "/personal-website/static/media/img2.8bcfa2c0fcb6027e817e.jpg",
     "static/media/img3.jpg": "/personal-website/static/media/img3.82fcb0e3314bc737b1ee.jpg",
+    "static/media/boathouse2.png": "/personal-website/static/media/boathouse2.bdbbbac0d531b8147720.png",
     "static/media/me.JPG": "/personal-website/static/media/me.61733248a93144e7c45c.JPG",
     "static/media/background2.jpg": "/personal-website/static/media/background2.e7769750773d571ccf02.jpg",
     "static/media/background3.jpg": "/personal-website/static/media/background3.deb673042fee471f9023.jpg",
+    "static/media/berwick2.png": "/personal-website/static/media/berwick2.fe38de5662df62c8c4b7.png",
     "static/media/background1.jpg": "/personal-website/static/media/background1.471a407d551cc85b712b.jpg",
+    "static/media/roots2.png": "/personal-website/static/media/roots2.8952bfcc13bbb2a5f5b3.png",
+    "static/media/uvic2.png": "/personal-website/static/media/uvic2.b461097c2a3a1a72f2a6.png",
     "index.html": "/personal-website/index.html",
-    "main.6a1a74c4.css.map": "/personal-website/static/css/main.6a1a74c4.css.map",
-    "main.ff022eb3.js.map": "/personal-website/static/js/main.ff022eb3.js.map",
+    "main.0553ba60.css.map": "/personal-website/static/css/main.0553ba60.css.map",
+    "main.fe40875f.js.map": "/personal-website/static/js/main.fe40875f.js.map",
     "453.267e6399.chunk.js.map": "/personal-website/static/js/453.267e6399.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a1a74c4.css",
-    "static/js/main.ff022eb3.js"
+    "static/css/main.0553ba60.css",
+    "static/js/main.fe40875f.js"
   ]
 }
