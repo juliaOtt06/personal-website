@@ -24,7 +24,9 @@
     border: 1px solid rgba(255, 255, 255, 0.4); /* border colour */
 }
 
-
+.pretitle {
+  font-size: 1rem;
+}
 .title {
     font-size: 3rem; /*3rem = 48px*/
     font-weight: 700;
@@ -32,9 +34,10 @@
 }
 
 .subtitle {
-    font-size: 1.6rem; /* 1rem = 16px */
+    font-size: 1.2rem; /* 1rem = 16px */
     font-weight: 400; /* bolding the font */
     margin-bottom: 30px;
+    color: rgba(83, 78, 78, 0.853);
 }
 
 /* image styling */ 

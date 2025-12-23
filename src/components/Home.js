@@ -14,9 +14,9 @@ const Home = () => {
                 style={{ backgroundImage: `url(${bg})` }}
             >
                 <div className="home-content">
-
-                    <h1 className="title">I'm JULIA</h1>
-                    <h2 className="subtitle">Welcome to my website</h2>
+                    <h1 className="pretitle">Hello, I'm</h1>
+                    <h2 className="title">Julia Ottenbreit</h2>
+                    <h3 className="subtitle">Computer Science Undergraduate</h3>
 
                     <div className="image">
                         <img src={me} alt="A picture of me" className="me-img" />
