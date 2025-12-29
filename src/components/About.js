@@ -5,6 +5,7 @@ import bg from "./images/background2.jpg"
 import img1 from "./images/img1.jpg";
 import img2 from "./images/img2.jpg";
 import img3 from "./images/img3.jpg";
+import img4 from "./images/img4.JPG";
 
 const slides = [ // array of objects
     {
@@ -21,6 +22,11 @@ const slides = [ // array of objects
         img: img3,
         title: "Music",
         text: "I like music"
+    },
+    {
+        img: img4,
+        title: "Travel",
+        text: "I love to travel"
     }
 ];
 

@@ -4,6 +4,8 @@ import me from "./images/me.JPG";
 import bg from "./images/background1.jpg";
 import About from "./About";  
 import Expereince from "./Experience";
+import Projects from "./Projects";
+import Contact from "./Contact"
 
 const Home = () => {
     return (
@@ -31,6 +33,8 @@ const Home = () => {
 
             <About />
             <Expereince/>
+            <Projects/>
+            <Contact/>
         </>
     );
 };
