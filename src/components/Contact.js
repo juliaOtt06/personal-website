@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useRef} from "react";
+import emailjs from "emailjs-com";
 import "./Contact.css";
 import bg from "./images/background4.png";
 import {
@@ -8,6 +9,28 @@ import {
 } from "react-icons/sl";
 
 const Contact = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            "service_iqx80kw",
+            "template_4g1oz0h",
+            form.current,
+            "IIHtlzk8FsSdeBeQQ"
+        ).then(
+            () => {
+                alert("Message sent successfully!");
+                form.current.reset();
+            },
+            (error) => {
+                alert("Failed to send message.");
+                console.error(error);
+            }
+        );
+    };
+
     return (
         <div
             id="contact"
@@ -51,12 +74,26 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    {/* RIGHT FORM */}
-                    <form className="contact-form">
-                        <input type="text" placeholder="Name" />
-                        <input type="email" placeholder="Email" />
-                        <textarea placeholder="Your Message"></textarea>
-                        <button type="submit">Send Message</button>
+                    <form 
+                        className="contact-form"
+                        ref={form}
+                        onSubmit={sendEmail}>
+                        <input 
+                            type="text" 
+                            placeholder="Name"
+                            name="from_name"
+                            required />
+                        <input 
+                            type="email" 
+                            placeholder="Email" 
+                            name="from_email" 
+                            required />
+                        <textarea 
+                            placeholder="Your Message"
+                            name="message"
+                            required />
+                        <button 
+                            type="submit">Send Message </button>
                     </form>
 
                 </div>
