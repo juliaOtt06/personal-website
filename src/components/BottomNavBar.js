@@ -1,5 +1,5 @@
 import "./BottomNavBar.css";
-import { SlHome, SlUser, SlWrench, SlFolder, SlEnvolope} from "react-icons/sl";
+import { SlHome, SlUser, SlWrench, SlFolder, SlBubbles} from "react-icons/sl";
 
 const BottomNavBar = () => { /* function */
     const scrollToSection = (id) => { /* to keep function private */
@@ -32,7 +32,7 @@ const BottomNavBar = () => { /* function */
             </button>
 
             <button onClick={() => scrollToSection("contact")}>
-                <SlEnvolope/>
+                <SlBubbles/>
                 <span>Contact</span>
             </button>
         </nav>

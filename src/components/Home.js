@@ -1,7 +1,10 @@
 import React from "react";
 import "./Home.css";
+
 import me from "./images/me.JPG";
 import bg from "./images/background1.jpg";
+import resume from "./images/Julia O. - Resume.pdf"
+
 import About from "./About";  
 import Expereince from "./Experience";
 import Projects from "./Projects";
@@ -22,6 +25,25 @@ const Home = () => {
 
                     <div className="image">
                         <img src={me} alt="A picture of me" className="me-img" />
+                    </div>
+
+                    <div className="buttons">
+                        <a
+                            href={resume} //here until i update my resume
+                            className="resume-button"
+                            download="Julia O. - Resume.pdf"
+                        >
+                            Resume
+                        </a>
+
+                        <button 
+                            className="contact-me-button"
+                            onClick={ () => {
+                                document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+                            }}
+                        >
+                            Contact Me
+                        </button>
                     </div>
 
                     <p className="description">

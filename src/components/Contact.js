@@ -2,11 +2,7 @@ import React, {useRef} from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
 import bg from "./images/background4.png";
-import {
-    SlEnvolopeLetter,
-    SlSocialLinkedin,
-    SlSocialGithub
-} from "react-icons/sl";
+import {SlEnvolope, SlSocialLinkedin, SlSocialGithub} from "react-icons/sl";
 
 const Contact = () => {
     const form = useRef();
@@ -47,7 +43,7 @@ const Contact = () => {
                     {/* LEFT CARD */}
                     <div className="contact-card">
                         <div className="contact-icon-wrapper">
-                            <SlEnvolopeLetter />
+                            <SlEnvolope />
                         </div>
 
                         <h3 className="contact-card-title">Email</h3>
