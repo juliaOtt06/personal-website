@@ -40,34 +40,53 @@ const Contact = () => {
 
                 <div className="contact-layout">
 
-                    {/* LEFT CARD */}
                     <div className="contact-card">
-                        <div className="contact-icon-wrapper">
-                            <SlEnvolope />
+                        
+                        <div className="contact-row">
+                            <a
+                                href="mailto:ottenbreitjulia06@gmail.com"
+                                className="contact-icon-link"
+                                aria-label="Send email"
+                            >
+                                <SlEnvolope className="contact-row-icon" />
+                            </a>
+
+                            <span className="contact-text">
+                                ottenbreitjulia06@gmail.com
+                            </span>
                         </div>
 
-                        <h3 className="contact-card-title">Email</h3>
-                        <p className="contact-email">
-                            ottenbreitjulia06@gmail.com
-                        </p>
-
-                        <div className="contact-socials">
+                        <div className="contact-row">
                             <a
                                 href="https://www.linkedin.com/in/julia-ottenbreit-618b84353"
                                 target="_blank"
                                 rel="noreferrer"
+                                className="contact-icon-link"
+                                aria-label="LinkedIn profile"
                             >
-                                <SlSocialLinkedin />
+                                <SlSocialLinkedin className="contact-row-icon" />
                             </a>
 
+                            <span className="contact-text">
+                                Julia Ottenbreit
+                            </span>
+                        </div>
+
+                        <div className="contact-row">
                             <a
                                 href="https://github.com/juliaOtt06"
                                 target="_blank"
                                 rel="noreferrer"
+                                className="contact-icon-link"
+                                aria-label="GitHub profile"
                             >
-                                <SlSocialGithub />
+                                <SlSocialGithub className="contact-row-icon" />
                             </a>
-                        </div>
+
+                            <span className="contact-text">
+                                juliaOtt06
+                            </span>
+                            </div>
                     </div>
 
                     <form 

@@ -90,15 +90,15 @@
 
 /* image styling */ 
 .me-img {
-    width: 260px; 
-    height: 260px; 
-    object-fit: cover; 
-    border-radius: 50%;
-    border: 2px solid #F7F4F1;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-    margin-bottom: 30px;
+  width: 260px; 
+  height: 260px; 
+  object-fit: cover; 
+  border-radius: 50%;
+  border: 2px solid #F7F4F1;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  margin-bottom: 30px;
 
-    animation: float 3s ease-in-out forwards;
+  animation: float 3s ease-in-out forwards;
 }
 
 /* contact formating */

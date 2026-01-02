@@ -70,8 +70,8 @@ const Experience = () => {
         <div className="experience">
   
           <section className="experience-intro">
-            <h1>Experience</h1>
-            <p>A look at the roles I’ve held so far, where I’ve built technical skills, problem-solving abilities, and strong communication through hands-on experience.</p>
+            <h1>Where I've worked</h1>
+            <h2>Experience</h2>
           </section>
   
           <section className="experience-layout">

@@ -1,41 +1,88 @@
-.about-background {
-  min-height: 100vh; /* the height of the entire visible screen */
-  background-size: cover; /* makes the background have no gaps or strecht weirdly */
-  background-position: center; /* positions the image at the center */
-  background-repeat: no-repeat; /* if the image was smaller than the screen, repeating it would show multiple copies */
+/* About.css */
 
-  display: flex; /* positions content on top of background */
-  justify-content: center; /* horizontaly centers the content */ 
-  align-items: center; /* verticaly centers the content */ 
-  padding: 40px 20px; /* prevents text from touching edge of screen on smaller screens */
+.about-background {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
 }
 
 .about {
-    padding: 50px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: min(1000px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
 }
 
 .about-me {
-  margin-bottom: 50px;
+  text-align: center;
+  max-width: 850px;
 }
 
 .about-me h1 {
   text-align: center;
   margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 3rem;
+  font-size: 1rem;
 }
-  
+
+.about-me h2 {
+  margin-bottom: 16px;
+  font-weight: 800;
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  letter-spacing: -0.5px;
+}
+
+.about-bio {
+  font-size: 1.05rem;
+  line-height: 1.75rem;
+  color: #2b2b2b;
+  opacity: 0.92;
+  margin: 0 auto;
+}
+
+/* ===== Card container (Option A layout) ===== */
+.about-card {
+  width: min(900px, 100%);
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* arrow | content | arrow */
+  align-items: center;
+  gap: 14px;
+
+  padding: 26px;
+  border-radius: 26px;
+
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(14px);
+}
+
+/* Content area (image + text) */
 .about-swipe-container {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
-  height: 350px;
-  
+  gap: 34px;
+  min-height: 360px;
+
+  animation: fadeUp 220ms ease-out;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .about-img {
@@ -43,46 +90,126 @@
   height: 330px;
   object-fit: cover;
   border-radius: 22px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
   flex-shrink: 0;
 }
 
 .about-text {
-  width: 350px;
-  min-height: 150px;
+  width: min(420px, 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 10px;
 }
 
 .about-text h2 {
-    font-size: 28px;
-    margin-bottom: 8px;
+  font-size: 30px;
+  margin: 0;
+  letter-spacing: -0.3px;
 }
 
 .about-text p {
-    font-size: 18px;
-    color: #444;
-}
-  
-.about-buttons {
-  position: absolute;
-  top: 50%;           /* vertically centers the arrows */
-  left: -100px;
-  right: -100px;
-
-  display: flex;
-  justify-content: space-between; /* arrows on opposite sides */
-  transform: translateY(-50%); /* perfect vertical centering */
+  font-size: 18px;
+  color: #333;
+  opacity: 0.9;
+  margin: 0;
 }
 
-.about-buttons button {
-  font-size: 2rem;
-  padding: 10px 20px;
-  border: none;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 12px;
+/* ===== Arrows (now NOT on top of image) ===== */
+.arrow-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(10px);
+
   cursor: pointer;
-  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.4rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+
+  transition: transform 0.15s ease, background 0.15s ease;
 }
-  
+
+.arrow-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.arrow-btn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* (Optional) tiny spacing tweaks if you want */
+.arrow-btn.left {
+  justify-self: start;
+}
+
+.arrow-btn.right {
+  justify-self: end;
+}
+
+/* ===== Dots ===== */
+.about-dots {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.2);
+  transition: transform 0.12s ease, background 0.12s ease, width 0.12s ease;
+}
+
+.dot:hover {
+  transform: scale(1.15);
+}
+
+.dot.active {
+  width: 22px;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* ===== Responsive (stack on small screens) ===== */
+@media (max-width: 860px) {
+  .about-card {
+    grid-template-columns: 1fr; /* stack everything */
+    gap: 16px;
+  }
+
+  .about-swipe-container {
+    flex-direction: column;
+    gap: 18px;
+    min-height: unset;
+  }
+
+  .about-img {
+    width: min(360px, 100%);
+    height: 320px;
+  }
+
+  /* Put arrows in a row under content on mobile */
+  .arrow-btn.left,
+  .arrow-btn.right {
+    justify-self: center;
+  }
+
+  .about-card > .arrow-btn.left {
+    order: 2;
+  }
+  .about-card > .about-swipe-container {
+    order: 1;
+  }
+  .about-card > .arrow-btn.right {
+    order: 3;
+  }
+}

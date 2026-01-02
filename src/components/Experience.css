@@ -27,6 +27,12 @@
 .experience-intro h1 {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.experience-intro h2 {
+  text-align: center;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 3rem;
 }
