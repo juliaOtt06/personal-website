@@ -2,16 +2,24 @@ import React from "react";
 import "./Projects.css"
 import bg from "./images/background2.jpg"
 
-import project1 from "./images/personal-portfolio.jpg"
+import project1 from "./images/personal-portfolio2.jpg"
+import project2 from "./images/clinic2.jpg"
 
 const projects = [
     {
         id: 1, 
-        tittle: "Personal Portfolio",
+        title: "Personal Portfolio",
         tech: "React | HTML | CSS",
         image: project1, //for now
         github: "https://github.com/juliaOtt06/personal-website",
         live: "https://juliaott06.github.io/personal-website/"
+    },
+    {
+        id: 2, 
+        title: "Clinic Patient Managment System",
+        tech: "Pyhton | PyQt6 | JSON",
+        image: project2,
+        github: "https://github.com/juliaOtt06/clinic-managment-system"
     }
 ]
 
