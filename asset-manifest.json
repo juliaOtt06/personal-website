@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/personal-website/static/css/main.1c7af562.css",
-    "main.js": "/personal-website/static/js/main.7dd54024.js",
+    "main.js": "/personal-website/static/js/main.621a4076.js",
     "static/js/453.267e6399.chunk.js": "/personal-website/static/js/453.267e6399.chunk.js",
     "static/media/img1.jpg": "/personal-website/static/media/img1.a06940e9fa87f1177303.jpg",
     "static/media/img3.jpg": "/personal-website/static/media/img3.82fcb0e3314bc737b1ee.jpg",
     "static/media/boathouse2.png": "/personal-website/static/media/boathouse2.bdbbbac0d531b8147720.png",
-    "static/media/personal-portfolio.jpg": "/personal-website/static/media/personal-portfolio.4b8b2166e1b33ad8e6b4.jpg",
+    "static/media/personal-portfolio2.jpg": "/personal-website/static/media/personal-portfolio2.ac57062acc2548893bb7.jpg",
     "static/media/img2.jpg": "/personal-website/static/media/img2.8d8659ebf092af4f0ee1.jpg",
     "static/media/background4.png": "/personal-website/static/media/background4.94ba21cbc36ccea0ae5c.png",
     "static/media/me.JPG": "/personal-website/static/media/me.61733248a93144e7c45c.JPG",
@@ -16,15 +16,16 @@
     "static/media/img4.JPG": "/personal-website/static/media/img4.2b787eed9da9bd1cc9cb.JPG",
     "static/media/background1.jpg": "/personal-website/static/media/background1.471a407d551cc85b712b.jpg",
     "static/media/roots2.png": "/personal-website/static/media/roots2.8952bfcc13bbb2a5f5b3.png",
+    "static/media/clinic2.jpg": "/personal-website/static/media/clinic2.bd1f3261ee499015d33f.jpg",
     "static/media/uvic2.png": "/personal-website/static/media/uvic2.b461097c2a3a1a72f2a6.png",
     "static/media/Julia O. - Resume.pdf": "/personal-website/static/media/Julia O. - Resume.be9333f18e84d162b7c9.pdf",
     "index.html": "/personal-website/index.html",
     "main.1c7af562.css.map": "/personal-website/static/css/main.1c7af562.css.map",
-    "main.7dd54024.js.map": "/personal-website/static/js/main.7dd54024.js.map",
+    "main.621a4076.js.map": "/personal-website/static/js/main.621a4076.js.map",
     "453.267e6399.chunk.js.map": "/personal-website/static/js/453.267e6399.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1c7af562.css",
-    "static/js/main.7dd54024.js"
+    "static/js/main.621a4076.js"
   ]
 }
