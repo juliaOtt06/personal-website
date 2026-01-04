@@ -47,7 +47,7 @@ const Home = () => {
                     </div>
 
                     <p className="description">
-                        This is my space on the web—more updates and projects coming soon!
+                        This is my space on the web. More projects coming soon!
                     </p>
 
                 </div>

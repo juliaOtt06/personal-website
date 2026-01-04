@@ -108,8 +108,9 @@
     backdrop-filter: blur(14px);
     border: 1px solid rgba(255, 255, 255, 0.4);
 
-    width: 800px; 
-    height: 400px; /* makes it be set size */ 
+    width: 100%;
+    max-width: 800px;
+    min-height: 300px; 
 
     overflow-y: auto;
 

@@ -9,10 +9,26 @@ import img3 from "./images/img3.jpg";
 import img4 from "./images/img4.JPG";
 
 const slides = [
-  { img: img1, title: "Hiking", text: "I enjoy the outside yayy." },
-  { img: img2, title: "Climbing", text: "I love bouldering." },
-  { img: img3, title: "Music", text: "I like music." },
-  { img: img4, title: "Travel", text: "I love to travel." },
+  { 
+    img: img1, 
+    title: "Hiking", 
+    text: "Exploring nature helps me slow down, stay grounded, and see the world from a whole new perspective, nothing beats reaching the summit and cooling off in a lake after.  " 
+  },
+  { 
+    img: img2, 
+    title: "Climbing", 
+    text: "Bouldering keeps me active and motivated, and finishing a challenging climb always feels rewarding. I'm hoping to take my climbing outdoors this summer." 
+  },
+  { 
+    img: img3, 
+    title: "Music", 
+    text: "Music is a constant in my life, and I almost always have headphones on hand. I love live shows and already have three concerts lined up for 2026." 
+  },
+  { 
+    img: img4, 
+    title: "Travel", 
+    text: "Born in Brazil, travel has always been a big part of my life. I've explored Spain, Portugal, Australia, and Switzerland, and I'm excited to see many more places in the future" 
+  },
 ];
 
 const About = () => {
