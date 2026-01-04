@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.1c7af562.css",
-    "main.js": "/personal-website/static/js/main.621a4076.js",
+    "main.css": "/personal-website/static/css/main.d085c76b.css",
+    "main.js": "/personal-website/static/js/main.93998864.js",
     "static/js/453.267e6399.chunk.js": "/personal-website/static/js/453.267e6399.chunk.js",
     "static/media/img1.jpg": "/personal-website/static/media/img1.a06940e9fa87f1177303.jpg",
     "static/media/img3.jpg": "/personal-website/static/media/img3.82fcb0e3314bc737b1ee.jpg",
@@ -20,12 +20,12 @@
     "static/media/uvic2.png": "/personal-website/static/media/uvic2.b461097c2a3a1a72f2a6.png",
     "static/media/Julia O. - Resume.pdf": "/personal-website/static/media/Julia O. - Resume.be9333f18e84d162b7c9.pdf",
     "index.html": "/personal-website/index.html",
-    "main.1c7af562.css.map": "/personal-website/static/css/main.1c7af562.css.map",
-    "main.621a4076.js.map": "/personal-website/static/js/main.621a4076.js.map",
+    "main.d085c76b.css.map": "/personal-website/static/css/main.d085c76b.css.map",
+    "main.93998864.js.map": "/personal-website/static/js/main.93998864.js.map",
     "453.267e6399.chunk.js.map": "/personal-website/static/js/453.267e6399.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c7af562.css",
-    "static/js/main.621a4076.js"
+    "static/css/main.d085c76b.css",
+    "static/js/main.93998864.js"
   ]
 }
