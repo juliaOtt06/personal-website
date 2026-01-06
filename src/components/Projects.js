@@ -4,6 +4,7 @@ import bg from "./images/background2.jpg"
 
 import project1 from "./images/personal-portfolio2.jpg"
 import project2 from "./images/clinic2.jpg"
+import project3 from "./images/project3.jpg"
 
 const projects = [
     {
@@ -16,10 +17,17 @@ const projects = [
     },
     {
         id: 2, 
-        title: "Clinic Patient Managment System",
+        title: "Clinic Managment System",
         tech: "Pyhton | PyQt6 | JSON",
         image: project2,
         github: "https://github.com/juliaOtt06/clinic-managment-system"
+    },
+    {
+        id: 3, 
+        title: "2-D Platform Game",
+        tech: "Godot | GDScript",
+        image: project3,
+        github: "https://github.com/juliaOtt06/2D-platformer-game"
     }
 ]
 
@@ -41,14 +49,14 @@ const Projects = () => {
                     {projects.map((project) => (
                         <div className="project-card" key={project.id}>
 
+                            <h2>{project.title}</h2>
                             <img
                                 src={project.image}
-                                alt={project.tittle}
+                                alt={project.title}
                                 className="project-image"
                             />
 
-                            <h2>{project.tittle}</h2>
-                            <p classNmae="project-tech">{project.tech}</p>
+                            <p className="project-tech">{project.tech}</p>
 
                             <div className="project-buttons">
                                 <a href={project.github} target="_blank" rel="noreferrer">
