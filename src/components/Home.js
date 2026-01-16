@@ -3,7 +3,7 @@ import "./Home.css";
 
 import me from "./images/me.JPG";
 import bg from "./images/background1.jpg";
-import resume from "./images/Julia O. - Resume.pdf"
+import resume from "./images/Julia_O_Resume.pdf"
 
 import About from "./About";  
 import Expereince from "./Experience";
@@ -31,7 +31,7 @@ const Home = () => {
                         <a
                             href={resume} //here until i update my resume
                             className="resume-button"
-                            download="Julia O. - Resume.pdf"
+                            download="Julia_O_Resume.pdf"
                         >
                             Resume
                         </a>

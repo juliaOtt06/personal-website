@@ -110,7 +110,7 @@
 
     width: 100%;
     max-width: 800px;
-    min-height: 300px; 
+    min-height: 380px; 
 
     overflow-y: auto;
 
@@ -135,7 +135,7 @@
     margin-bottom: 0px;
   }
   
-  /* GLASS EFFECT (reuse anywhere!) */
+  /* GLASS EFFECT */
   .glass {
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(14px);

@@ -2,7 +2,7 @@ import React from "react";
 import "./Projects.css"
 import bg from "./images/background2.jpg"
 
-import project1 from "./images/personal-portfolio2.jpg"
+import project1 from "./images/personal-portfolio3.png"
 import project2 from "./images/clinic2.jpg"
 import project3 from "./images/project3.jpg"
 

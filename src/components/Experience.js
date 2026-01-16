@@ -15,9 +15,9 @@ const experiences = [
         role: "Computer Help Desk Analyst",
         date: "September 2025 - Present",
         description: [
-          <><strong>Provide</strong> technical support to students, faculty, and staff, assisting with issues related to the campus network, Microsoft 365, Multi-Factor authentication, and various devices.</>,
-          <><strong>Troubleshoot</strong> and resolve hardware, software and account-related issues while maintaining clear and efficient communication.</>,
-          <><strong>Strengthening</strong> problem-solving and communication skills in a dynamic, customer-focused IT environment.</>
+          <>Provide technical support to students, faculty, and staff for campus network access, Microsoft 365, Multi-Factor Authentication, and device-related issues.</>,
+          <>Troubleshoot and resolve hardware, software, and account-related problems while maintaining clear and professional communication.</>,
+          <>Develop strong problem-solving and customer service skills in a fast-paced IT support environment.</>
         ]
     },
     {
@@ -27,9 +27,9 @@ const experiences = [
         role: "Receptionist and Maintanence Workder",
         date: "June 2025 - August 2025",
         description: [
-          <><strong>Respond</strong> promptly to resident emergencies by assessing symptoms, contacting emergency services (e.g., 911), and reporting incidents appropriately.</>,
-          <><strong>Serve</strong> as the acting manager on duty, providing leadership support by overseeing store operations.</>,
-          <><strong>Deliver</strong> excellent customer service while maintaining accuracy and efficiency, even in high-pressure situations.</>
+          <>Responded promptly to resident emergencies by assessing situations, contacting emergency services, and documenting incidents accurately.</>,
+          <>Managed incoming calls and inquiries, redirecting requests to appropriate departments and ensuring timely follow-up.</>,
+          <>Supported daily resident needs, including assistance with basic technology and administrative tasks.</>
         ]
     },
     {
@@ -39,9 +39,9 @@ const experiences = [
         role: "Shift Supervisor",
         date: "June 2024 - March 2025",
         description: [
-          <><strong>Assist</strong> in store operations by managing the cash register, processing transactions, and handling exchanges and returns efficiently.</>,
-          <><strong>Serve</strong> as the acting manager on duty, providing leadership support by overseeing store operations.</>,
-          <><strong>Deliver</strong> excellent customer service while maintaining accuracy and efficiency, even in high-pressure situations.</>
+          <>Supported store operations by managing cash transactions, exchanges, and returns with accuracy and efficiency.</>,
+          <>Acted as manager on duty, overseeing staff and ensuring smooth daily operations.</>,
+          <>Delivered consistent customer service in high-pressure retail environments.</>
         ]
     },
     {
@@ -51,9 +51,9 @@ const experiences = [
         role: "Sales Associate",
         date: "August 2022 - September 2023",
         description: [
-          <><strong>Deliver</strong> personalized customer service, ensuring a welcoming and efficient shopping experience.</>,
-          <><strong>support</strong> store closing procedures, including end-of-day cash handling, tidying the sales floor, and completing cleaning tasks.</>,
-          <><strong>Maintain</strong> visual standards by refolding merchandise and organizing displays to enhance product presentation and overall visual appeal.</>
+          <>Provided attentive customer service in a fast-paced retail environment, assisting customers with product selection and purchases.</>,
+          <>Supported store operations through cash handling, closing procedures, and maintaining an organized sales floor.</>,
+          <>Upheld visual standards by organizing merchandise and ensuring consistent store presentation.</>
         ]
     }
 ];
@@ -100,9 +100,6 @@ const Experience = () => {
                 {active.date && <span className="role-date">{active.date}</span>}
               </div>
 
-              {/* 🔽 THIS IS THE IMPORTANT PART 🔽 */}
-              {/* If description is an array → show bullet points */}
-              {/* If it's a string → show normal text */}
               {Array.isArray(active.description) ? (
                 <ul className="experience-bullets">
                   {active.description.map((point, index) => (
